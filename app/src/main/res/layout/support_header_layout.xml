@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/supportEmailImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+        android:background="?selectableItemBackgroundBorderless"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_email" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/supportEmailTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center_vertical"
+        android:text="@string/support_email"
+        android:textColor="?android:textColorPrimary"
+        app:fontFamily="@font/lato_regular"
+        app:layout_constraintBottom_toBottomOf="@id/supportEmailImage"
+        app:layout_constraintStart_toEndOf="@id/supportEmailImage"
+        app:layout_constraintTop_toTopOf="@id/supportEmailImage" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/supportSocialTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/chat_with_us"
+        android:textAllCaps="true"
+        android:textColor="?android:textColorPrimary"
+        app:fontFamily="@font/lato_bold"
+        app:layout_constraintStart_toStartOf="@+id/supportEmailImage"
+        app:layout_constraintTop_toBottomOf="@id/supportEmailImage" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/supportSocialWhatsUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:background="?selectableItemBackgroundBorderless"
+        app:layout_constraintStart_toStartOf="@id/supportSocialTitle"
+        app:layout_constraintTop_toBottomOf="@id/supportSocialTitle"
+        app:srcCompat="@drawable/ic_whatsapp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/supportSocialTelegram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:background="?selectableItemBackgroundBorderless"
+        app:layout_constraintStart_toEndOf="@id/supportSocialWhatsUp"
+        app:layout_constraintTop_toTopOf="@id/supportSocialWhatsUp"
+        app:srcCompat="@drawable/ic_telegram" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/supportSocialViber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:background="?selectableItemBackgroundBorderless"
+        app:layout_constraintStart_toEndOf="@id/supportSocialTelegram"
+        app:layout_constraintTop_toTopOf="@id/supportSocialTelegram"
+        app:srcCompat="@drawable/ic_viber" />
+
+    <View
+        android:id="@+id/supportHeaderDivider"
+        style="@style/Widget.Divider"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/supportSocialWhatsUp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/popular"
+        android:textColor="?android:textColorPrimary"
+        android:textSize="22sp"
+        app:fontFamily="@font/lato_bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/supportHeaderDivider" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

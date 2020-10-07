@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/supportToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            style="@style/Widget.Toolbar.Icon"
+            app:srcCompat="@drawable/ic_arrow_left" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/Widget.Toolbar.Title"
+            android:text="@string/customer_service_help"
+            app:fontFamily="@font/lato_regular" />
+
+        <Space style="@style/Widget.Toolbar.Icon" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/supportRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/question_item" />
+
+</LinearLayout>

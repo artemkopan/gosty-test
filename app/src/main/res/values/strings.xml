@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GostySupport</string>
+    <string name="customer_service_help">Customer Service help</string>
+    <string name="support_email">E-mail us</string>
+    <string name="chat_with_us">Chat with us</string>
+    <string name="popular">Popular</string>
+</resources>
